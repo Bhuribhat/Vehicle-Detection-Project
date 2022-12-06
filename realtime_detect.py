@@ -30,7 +30,7 @@ def center_position(x, y, w, h):
 # real time detection using background subtractor
 def count_using_bg_sub(show_detect):
     show_detect = show_detect.lower()
-    CAP = cv2.VideoCapture('./Resources/video.mp4')
+    CAP = cv2.VideoCapture('./Resources/video2.mp4')
 
     # Initialize Background Subtructor
     subtract = cv2.bgsegm.createBackgroundSubtractorMOG()
@@ -92,7 +92,7 @@ def count_using_bg_sub(show_detect):
 
 # real time detection using model cars.xml (less accuracy)
 def count_using_model_xml():
-    CAP = cv2.VideoCapture('./Resources/video.mp4')
+    CAP = cv2.VideoCapture('./Resources/video2.mp4')
 
     # Configuration for detection
     detect_car = []
