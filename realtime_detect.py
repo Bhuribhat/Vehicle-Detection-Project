@@ -29,6 +29,7 @@ def center_position(x, y, w, h):
 
 # real time detection using background subtractor
 def count_using_bg_sub(show_detect):
+    show_detect = show_detect.lower()
     CAP = cv2.VideoCapture('./Resources/video.mp4')
 
     # Initialize Background Subtructor
