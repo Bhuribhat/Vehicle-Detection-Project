@@ -40,6 +40,7 @@ def detect_car_model(image_bgr):
         blur, 
         scaleFactor = 1.1,    # how much the image size is reduced at each image scale
         minNeighbors = 2,     # how many neighbors each candidate rectangle should have to retain it
+        minSize = (min_width, min_height)
     )
 
     # Extract bounding boxes for any car identified
