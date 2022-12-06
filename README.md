@@ -14,6 +14,8 @@
 
 # Detect Car in Images
 
+### using cars.xml model
+
 ```py
 import cv2
 import matplotlib.pyplot as plt
@@ -66,8 +68,21 @@ detect_car_model(image)
 | <img src="Resources/result1.png" width="450"> | <img src="Resources/result2.png" width="450\"> |
 | Car22.jpeg | Car29.jpeg |
 
+
+# Real-time Car Detection
+
+### usage
+
+```
+>> py main.py
+```
+
+- detect using subtract background (**more** accuracy)
+- detect using cars.xml model (**less** accuracy)
+
+
 # Resources
 
 - [Image dataset](https://www.kaggle.com/datasets/sshikamaru/car-object-detection)
 - [detect multiscale using opencv](https://stackoverflow.com/questions/36218385/parameters-of-detectmultiscale-in-opencv-using-python)
-- [background subtraction](https://www.geeksforgeeks.org/python-opencv-background-subtraction/)# Car-Detection-Project
+- [background subtraction](https://www.geeksforgeeks.org/python-opencv-background-subtraction/)
