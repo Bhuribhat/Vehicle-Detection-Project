@@ -72,7 +72,8 @@ detect_car_model(image)
 
 # Real-time Car Detection
 
-![](https://github.com/Bhuribhat/Car-Detection-Project/blob/main/Resources/detectcar.gif)
+<img src="Resources/detectcar.gif" width="600">
+
 
 ### usage
 
