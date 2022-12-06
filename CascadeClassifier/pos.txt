@@ -1,0 +1,274 @@
+positive\vid_4_1000.jpg 1 288 191 34 30
+positive\vid_4_10000.jpg 1 21 194 94 38
+positive\vid_4_10020.jpg 1 507 180 116 42
+positive\vid_4_10040.jpg 1 244 188 110 45
+positive\vid_4_10060.jpg 1 31 196 96 37
+positive\vid_4_10100.jpg 1 446 176 134 49
+positive\vid_4_10120.jpg 1 174 188 121 47
+positive\vid_4_10140.jpg 1 1 199 81 38
+positive\vid_4_1020.jpg 1 205 196 38 28
+positive\vid_4_1040.jpg 1 126 199 48 26
+positive\vid_4_10480.jpg 1 482 185 118 42
+positive\vid_4_10500.jpg 1 164 197 104 37
+positive\vid_4_1060.jpg 1 52 198 58 27
+positive\vid_4_1080.jpg 1 0 197 50 25
+positive\vid_4_10960.jpg 1 624 180 50 40
+positive\vid_4_10980.jpg 1 403 187 104 48
+positive\vid_4_11000.jpg 1 155 198 101 42
+positive\vid_4_11020.jpg 1 0 198 71 38
+positive\vid_4_11240.jpg 1 509 189 123 38
+positive\vid_4_11260.jpg 1 278 198 126 40
+positive\vid_4_11280.jpg 1 69 204 116 35
+positive\vid_4_11380.jpg 1 522 185 90 34
+positive\vid_4_11400.jpg 1 337 194 90 37
+positive\vid_4_11420.jpg 1 143 198 91 37
+positive\vid_4_11440.jpg 1 0 202 73 33
+positive\vid_4_11880.jpg 1 620 185 55 30
+positive\vid_4_11900.jpg 1 528 185 93 33
+positive\vid_4_11920.jpg 1 417 190 93 32
+positive\vid_4_11940.jpg 1 290 194 93 33
+positive\vid_4_11960.jpg 1 167 200 86 27
+positive\vid_4_11980.jpg 1 64 205 79 23
+positive\vid_4_12000.jpg 1 0 203 51 23
+positive\vid_4_12040.jpg 1 642 182 33 25
+positive\vid_4_12060.jpg 1 600 181 40 26
+positive\vid_4_12080.jpg 1 536 181 50 29
+positive\vid_4_12100.jpg 1 450 180 68 33
+positive\vid_4_12120.jpg 1 342 183 85 37
+positive\vid_4_12140.jpg 1 220 188 95 33
+positive\vid_4_12160.jpg 1 102 192 98 33
+positive\vid_4_12180.jpg 3 560 178 51 41 487 177 31 23 6 198 85 27
+positive\vid_4_12200.jpg 2 474 179 49 36 437 179 25 23
+positive\vid_4_12220.jpg 1 401 182 47 30
+positive\vid_4_12240.jpg 1 338 183 45 30
+positive\vid_4_12260.jpg 2 285 188 41 25 496 194 170 48
+positive\vid_4_12280.jpg 4 236 190 38 24 332 193 165 57 569 172 106 60 503 176 110 44
+positive\vid_4_12300.jpg 2 171 201 152 52 413 179 168 69
+positive\vid_4_12320.jpg 3 34 204 146 50 240 182 163 68 143 199 87 39
+positive\vid_4_12340.jpg 2 92 188 151 63 0 203 64 46
+positive\vid_4_12360.jpg 1 1 193 112 62
+positive\vid_4_12380.jpg 1 6 195 87 46
+positive\vid_4_12480.jpg 1 20 181 276 118
+positive\vid_4_13620.jpg 1 253 192 182 65
+positive\vid_4_13640.jpg 2 1 197 119 54 330 183 24 26
+positive\vid_4_13660.jpg 2 292 183 26 24 570 179 105 53
+positive\vid_4_13680.jpg 2 217 196 156 55 498 176 120 48
+positive\vid_4_13700.jpg 4 0 201 69 42 222 186 32 21 253 186 115 47 380 189 159 53
+positive\vid_4_13720.jpg 3 41 197 134 49 187 185 36 22 592 175 83 57
+positive\vid_4_13740.jpg 2 242 182 179 68 155 188 41 22
+positive\vid_4_13760.jpg 3 1 189 97 52 127 187 41 22 612 164 63 51
+positive\vid_4_13780.jpg 2 98 189 42 18 408 157 147 66
+positive\vid_4_13800.jpg 2 169 166 137 63 553 181 122 49
+positive\vid_4_13820.jpg 3 5 178 108 55 182 191 160 57 430 181 107 42
+positive\vid_4_13840.jpg 1 189 188 103 42
+positive\vid_4_13860.jpg 3 9 195 86 34 429 188 165 54 610 177 65 36
+positive\vid_4_13880.jpg 2 69 194 144 50 397 179 107 44
+positive\vid_4_13900.jpg 1 149 185 98 41
+positive\vid_4_13920.jpg 1 0 192 65 32
+positive\vid_4_14140.jpg 1 356 191 255 94
+positive\vid_4_14160.jpg 1 0 199 157 73
+positive\vid_4_14340.jpg 1 624 173 51 36
+positive\vid_4_14360.jpg 1 394 177 107 49
+positive\vid_4_14380.jpg 1 140 190 99 40
+positive\vid_4_14400.jpg 1 0 193 54 35
+positive\vid_4_14440.jpg 1 590 176 85 33
+positive\vid_4_14460.jpg 1 378 179 105 39
+positive\vid_4_14480.jpg 1 159 192 96 34
+positive\vid_4_14500.jpg 1 4 198 76 31
+positive\vid_4_15000.jpg 1 525 180 150 54
+positive\vid_4_15020.jpg 1 196 195 151 53
+positive\vid_4_15040.jpg 1 0 201 79 40
+positive\vid_4_16000.jpg 1 410 194 85 38
+positive\vid_4_16020.jpg 1 252 196 81 38
+positive\vid_4_16040.jpg 1 109 200 81 33
+positive\vid_4_16060.jpg 1 2 203 64 28
+positive\vid_4_16100.jpg 1 600 183 75 36
+positive\vid_4_16120.jpg 1 462 186 113 44
+positive\vid_4_16140.jpg 1 296 191 111 43
+positive\vid_4_16160.jpg 1 138 196 105 42
+positive\vid_4_16180.jpg 1 15 200 89 34
+positive\vid_4_16280.jpg 1 600 181 73 38
+positive\vid_4_16300.jpg 1 524 182 61 34
+positive\vid_4_16320.jpg 1 452 184 48 30
+positive\vid_4_16400.jpg 1 246 190 22 21
+positive\vid_4_16420.jpg 1 211 192 26 19
+positive\vid_4_16440.jpg 1 182 191 28 20
+positive\vid_4_16460.jpg 1 157 194 26 16
+positive\vid_4_16500.jpg 1 231 194 156 58
+positive\vid_4_16660.jpg 1 422 189 165 53
+positive\vid_4_16680.jpg 1 67 202 137 51
+positive\vid_4_16700.jpg 1 447 183 161 63
+positive\vid_4_16720.jpg 1 68 198 143 56
+positive\vid_4_17040.jpg 1 541 177 131 49
+positive\vid_4_17060.jpg 1 289 184 127 49
+positive\vid_4_17080.jpg 1 57 192 115 43
+positive\vid_4_17100.jpg 3 496 190 107 37 289 195 23 20 241 202 30 15
+positive\vid_4_17120.jpg 2 225 199 103 36 190 200 34 20
+positive\vid_4_17140.jpg 4 18 205 86 30 544 185 114 38 185 199 38 18 144 203 36 16
+positive\vid_4_17160.jpg 4 299 195 109 38 139 199 41 19 101 203 37 17 68 204 33 15
+positive\vid_4_17180.jpg 3 34 206 28 15 62 205 35 12 72 204 98 33
+positive\vid_4_17240.jpg 1 424 188 150 63
+positive\vid_4_17260.jpg 1 55 202 128 47
+positive\vid_4_17320.jpg 1 263 179 289 118
+positive\vid_4_17340.jpg 2 165 197 106 40 1 195 133 86
+positive\vid_4_17400.jpg 1 506 185 107 43
+positive\vid_4_17420.jpg 1 212 195 102 44
+positive\vid_4_17440.jpg 1 1 199 77 37
+positive\vid_4_17540.jpg 2 260 184 163 69 479 181 118 46
+positive\vid_4_17560.jpg 3 0 197 81 46 190 187 113 48 554 184 121 55
+positive\vid_4_17580.jpg 2 0 193 76 37 149 198 165 54
+positive\vid_4_1760.jpg 1 472 188 99 35
+positive\vid_4_17600.jpg 1 579 181 96 54
+positive\vid_4_17620.jpg 2 159 199 170 54 430 182 134 47
+positive\vid_4_17640.jpg 2 134 192 124 43 614 187 61 42
+positive\vid_4_17660.jpg 1 243 195 158 54
+positive\vid_4_17680.jpg 1 0 205 69 36
+positive\vid_4_1780.jpg 2 238 195 88 34 545 173 130 65
+positive\vid_4_1800.jpg 3 46 202 79 27 145 190 171 64 545 186 95 30
+positive\vid_4_18180.jpg 1 347 193 158 56
+positive\vid_4_1820.jpg 2 323 191 98 36 542 173 132 69
+positive\vid_4_18200.jpg 1 26 205 128 42
+positive\vid_4_18320.jpg 1 494 177 123 46
+positive\vid_4_18340.jpg 1 232 187 117 49
+positive\vid_4_18360.jpg 1 24 197 103 39
+positive\vid_4_1840.jpg 2 104 192 181 65 329 181 126 50
+positive\vid_4_1860.jpg 2 79 192 114 44 588 186 87 54
+positive\vid_4_1880.jpg 3 163 199 180 59 531 184 77 36 581 179 94 44
+positive\vid_4_18820.jpg 1 573 178 101 42
+positive\vid_4_18840.jpg 1 302 186 112 48
+positive\vid_4_18860.jpg 2 50 197 101 39 516 176 154 59
+positive\vid_4_18880.jpg 1 139 189 148 61
+positive\vid_4_1900.jpg 1 323 183 117 50
+positive\vid_4_19040.jpg 1 544 182 116 40
+positive\vid_4_19060.jpg 1 244 195 112 41
+positive\vid_4_19080.jpg 1 4 202 93 31
+positive\vid_4_1920.jpg 1 80 196 103 40
+positive\vid_4_1940.jpg 1 6 200 58 27
+positive\vid_4_1960.jpg 2 464 188 129 41 442 181 90 38
+positive\vid_4_1980.jpg 2 218 198 119 42 553 187 115 40
+positive\vid_4_2000.jpg 3 24 204 102 30 313 196 125 40 475 189 89 35
+positive\vid_4_2020.jpg 3 87 203 110 34 275 200 95 32 603 184 72 35
+positive\vid_4_2040.jpg 3 100 201 92 28 396 189 116 41 574 187 100 43
+positive\vid_4_2060.jpg 4 0 205 51 23 190 200 170 54 159 196 117 36 495 188 96 30
+positive\vid_4_2080.jpg 4 16 198 69 31 0 200 46 40 297 194 90 30 598 180 77 39
+positive\vid_4_2100.jpg 3 109 200 85 28 394 184 116 45 554 178 121 56
+positive\vid_4_2120.jpg 3 1 202 50 25 163 188 164 62 362 189 93 34
+positive\vid_4_2140.jpg 3 11 197 72 34 166 197 82 29 466 185 184 59
+positive\vid_4_2160.jpg 3 74 200 159 51 18 203 71 25 346 198 113 39
+positive\vid_4_2180.jpg 1 123 203 104 34
+positive\vid_4_2200.jpg 1 1 207 55 27
+positive\vid_4_2380.jpg 1 489 188 96 35
+positive\vid_4_2400.jpg 1 233 198 93 39
+positive\vid_4_2420.jpg 1 30 201 83 31
+positive\vid_4_2520.jpg 1 475 175 199 70
+positive\vid_4_2540.jpg 1 39 190 171 60
+positive\vid_4_3120.jpg 1 518 179 123 47
+positive\vid_4_3140.jpg 1 181 190 120 47
+positive\vid_4_3160.jpg 2 0 200 43 33 630 187 45 42
+positive\vid_4_3180.jpg 1 190 201 176 51
+positive\vid_4_3200.jpg 1 38 199 98 36
+positive\vid_4_3220.jpg 1 447 191 107 35
+positive\vid_4_3240.jpg 1 168 202 93 31
+positive\vid_4_3260.jpg 1 1 205 54 25
+positive\vid_4_3340.jpg 1 527 181 101 36
+positive\vid_4_3360.jpg 1 290 188 94 40
+positive\vid_4_3380.jpg 1 72 194 88 34
+positive\vid_4_3440.jpg 1 226 187 183 62
+positive\vid_4_3520.jpg 1 572 184 103 32
+positive\vid_4_3540.jpg 1 237 196 109 39
+positive\vid_4_3560.jpg 1 0 202 69 31
+positive\vid_4_3800.jpg 1 602 180 73 40
+positive\vid_4_3820.jpg 1 316 189 106 47
+positive\vid_4_3840.jpg 1 46 199 96 38
+positive\vid_4_4520.jpg 1 458 176 109 42
+positive\vid_4_4540.jpg 1 243 186 108 42
+positive\vid_4_4560.jpg 1 42 195 104 41
+positive\vid_4_600.jpg 1 292 192 114 42
+positive\vid_4_6160.jpg 2 585 176 89 37 559 182 57 28
+positive\vid_4_6180.jpg 2 427 178 125 47 612 181 63 27
+positive\vid_4_620.jpg 1 22 199 91 31
+positive\vid_4_6200.jpg 2 243 185 121 45 483 185 88 28
+positive\vid_4_6220.jpg 3 83 194 111 37 335 192 91 29 554 186 110 36
+positive\vid_4_6240.jpg 5 0 200 65 29 51 204 57 22 189 199 82 27 390 191 123 38 533 181 96 34
+positive\vid_4_6260.jpg 5 63 203 78 24 213 198 115 35 408 186 95 36 510 189 115 35 595 179 74 34
+positive\vid_4_6280.jpg 5 0 202 37 25 62 201 106 32 269 189 90 38 347 191 116 39 459 179 92 40
+positive\vid_4_6300.jpg 4 1 202 41 25 138 193 85 32 177 196 110 39 312 186 89 38
+positive\vid_4_6320.jpg 2 40 198 102 33 170 190 87 35
+positive\vid_4_6340.jpg 1 56 193 78 33
+positive\vid_4_6360.jpg 2 0 195 39 29 608 179 67 41
+positive\vid_4_6380.jpg 2 404 180 120 47 520 187 79 32
+positive\vid_4_6400.jpg 2 169 183 116 50 355 189 81 32
+positive\vid_4_6420.jpg 3 5 191 93 38 190 193 79 30 620 179 55 36
+positive\vid_4_6440.jpg 3 58 198 71 27 417 183 112 44 525 177 88 36
+positive\vid_4_6460.jpg 2 183 192 113 42 365 186 84 35
+positive\vid_4_6480.jpg 2 16 202 94 32 196 193 83 34
+positive\vid_4_6500.jpg 1 64 200 76 26
+positive\vid_4_6520.jpg 1 1 203 33 23
+positive\vid_4_680.jpg 1 577 187 97 69
+positive\vid_4_700.jpg 2 262 195 238 89 594 187 80 61
+positive\vid_4_720.jpg 2 0 203 181 70 290 192 235 91
+positive\vid_4_740.jpg 1 5 202 192 69
+positive\vid_4_8220.jpg 1 556 183 102 32
+positive\vid_4_8240.jpg 1 451 184 109 40
+positive\vid_4_8260.jpg 1 342 189 105 40
+positive\vid_4_8280.jpg 1 226 193 105 39
+positive\vid_4_8300.jpg 1 127 198 96 34
+positive\vid_4_8320.jpg 1 44 198 87 32
+positive\vid_4_8560.jpg 1 185 191 94 35
+positive\vid_4_8580.jpg 1 80 194 88 32
+positive\vid_4_860.jpg 1 292 190 155 54
+positive\vid_4_8600.jpg 1 1 199 72 27
+positive\vid_4_8640.jpg 1 638 185 36 26
+positive\vid_4_8660.jpg 1 511 187 73 28
+positive\vid_4_8680.jpg 1 357 191 74 31
+positive\vid_4_8700.jpg 1 202 197 70 31
+positive\vid_4_8720.jpg 1 74 201 66 28
+positive\vid_4_8740.jpg 1 0 206 37 19
+positive\vid_4_880.jpg 1 1 199 93 36
+positive\vid_4_8960.jpg 1 7 196 128 44
+positive\vid_4_8980.jpg 1 9 197 102 36
+positive\vid_4_900.jpg 1 636 175 38 23
+positive\vid_4_9000.jpg 1 12 198 85 27
+positive\vid_4_9020.jpg 1 13 199 73 27
+positive\vid_4_9040.jpg 1 12 203 61 21
+positive\vid_4_9060.jpg 2 10 203 53 21 216 198 87 34
+positive\vid_4_9080.jpg 2 31 204 74 28 12 202 43 17
+positive\vid_4_9100.jpg 1 14 199 38 17
+positive\vid_4_9120.jpg 1 13 199 34 11
+positive\vid_4_920.jpg 1 539 172 135 56
+positive\vid_4_9200.jpg 1 523 170 71 31
+positive\vid_4_9220.jpg 1 353 180 66 30
+positive\vid_4_9240.jpg 1 190 186 59 28
+positive\vid_4_9260.jpg 1 63 193 56 22
+positive\vid_4_9280.jpg 1 434 174 84 34
+positive\vid_4_9300.jpg 2 239 181 74 33 428 178 101 32
+positive\vid_4_9320.jpg 2 79 188 65 27 174 187 87 32
+positive\vid_4_9340.jpg 1 3 191 58 25
+positive\vid_4_940.jpg 2 145 187 156 60 513 183 65 29
+positive\vid_4_9420.jpg 1 429 174 104 42
+positive\vid_4_9440.jpg 1 153 184 93 38
+positive\vid_4_9460.jpg 1 0 193 52 28
+positive\vid_4_9500.jpg 1 564 175 111 46
+positive\vid_4_9520.jpg 2 256 184 122 48 617 181 58 32
+positive\vid_4_9540.jpg 2 382 173 147 57 14 193 92 33
+positive\vid_4_9560.jpg 3 86 188 128 47 199 197 85 33 497 177 129 43
+positive\vid_4_9580.jpg 2 277 187 112 40 34 201 74 24
+positive\vid_4_960.jpg 1 442 186 54 24
+positive\vid_4_9600.jpg 2 85 197 97 32 426 185 133 48
+positive\vid_4_9620.jpg 3 111 194 113 45 247 195 95 36 564 178 110 46
+positive\vid_4_9640.jpg 2 62 200 81 29 261 190 124 49
+positive\vid_4_9660.jpg 1 17 198 94 36
+positive\vid_4_9700.jpg 1 594 188 80 30
+positive\vid_4_9720.jpg 1 360 192 106 32
+positive\vid_4_9740.jpg 1 129 199 92 29
+positive\vid_4_9760.jpg 3 269 180 184 62 467 180 108 41 0 202 45 23
+positive\vid_4_9780.jpg 2 1 194 103 43 210 192 96 38
+positive\vid_4_980.jpg 1 368 187 41 28
+positive\vid_4_9800.jpg 2 17 199 85 33 631 185 44 30
+positive\vid_4_9820.jpg 1 390 188 120 39
+positive\vid_4_9840.jpg 1 135 195 107 36
+positive\vid_4_9860.jpg 1 0 205 49 24
+positive\vid_4_9880.jpg 1 327 162 202 82
+positive\vid_4_9900.jpg 1 1 178 138 61
+positive\vid_4_9960.jpg 1 494 175 114 44
+positive\vid_4_9980.jpg 1 227 186 113 47
