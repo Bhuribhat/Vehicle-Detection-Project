@@ -24,8 +24,8 @@ import matplotlib.pyplot as plt
 GREEN = (0, 255, 0)
 
 # Configuration Car Size
-min_width  = 80
-min_height = 80
+min_width  = 30
+min_height = 30
 
 # Create Car Classifier
 CLF = cv2.CascadeClassifier('cars.xml')

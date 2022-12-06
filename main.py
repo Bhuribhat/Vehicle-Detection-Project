@@ -1,8 +1,9 @@
 from realtime_detect import *
 
+TEXT = "1) Using Model XML\n2) Using Background Subtraction\n: "
 
 def main():
-    choice = input("1) Using Model\n2) Using Background\n: ").strip()
+    choice = input(TEXT).strip()
     if choice == '1':
         count = count_using_model_xml()
         print(f"Detected {count} vehicles.")

@@ -12,6 +12,14 @@ ORANGE = (0, 127, 255)
 CLF  = cv2.CascadeClassifier('./Resources/cars.xml')
 FONT = cv2.FONT_HERSHEY_COMPLEX
 
+# Configuration
+offset     = 6
+fps        = 60
+min_width  = 80
+min_height = 80
+linePos    = 550
+
+
 # get center position of the car
 def center_position(x, y, w, h):
     center_x = x + (w // 2)
@@ -28,15 +36,8 @@ def count_using_bg_sub(show_detect):
     kernel   = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
 
     # Configuration for detection
-    detect_car  = []
     car_count   = 0
-    offset      = 6
-    fps         = 60
-    linePos     = 550
-
-    # Configuration car size
-    min_width  = 80
-    min_height = 80
+    detect_car  = []
 
     while CAP.isOpened():
         duration = 1 / fps
@@ -95,13 +96,6 @@ def count_using_model_xml():
     # Configuration for detection
     detect_car = []
     car_count  = 0
-    offset     = 6
-    fps        = 30
-    linePos    = 550
-
-    # Configuration car size
-    min_width  = 80
-    min_height = 80
 
     while CAP.isOpened():
         duration = 1 / fps
