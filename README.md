@@ -5,6 +5,8 @@
 
 **6330585221 Akkharawat Burachokviwat**
 
+Medium Link: https://medium.com/@EarthAkkharawat/real-time-vehicle-detection-and-counting-using-the-background-subtractor-comparing-with-haar-ff05f9ab2b92
+
 # Download Car Images
 
 ```py
