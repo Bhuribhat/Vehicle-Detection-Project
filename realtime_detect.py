@@ -3,24 +3,30 @@ import time
 import numpy as np
 
 # Colors and Constant
-GREEN  = (0, 255, 0)
-RED    = (0, 0, 255)
-BLUE   = (176, 130, 39)
+GREEN = (0, 255, 0)
+RED = (0, 0, 255)
+BLUE = (176, 130, 39)
 ORANGE = (0, 127, 255)
 
 # Create Car Classifier
-CLF  = cv2.CascadeClassifier('./Resources/cars.xml')
+CLF = cv2.CascadeClassifier('./Resources/cars.xml')
 FONT = cv2.FONT_HERSHEY_COMPLEX
 
 # Configuration
-offset     = 5
-fps        = 60
-min_width  = 80
+offset = 6
+fps = 60
+min_width = 80
 min_height = 80
-linePos    = 550
+linePos = 550
 
+num_count_video1 = 0
+num_count_video2 = 0
+ground_truth1 = 62
+ground_truth2 = 36
 
 # get center position of the car
+
+
 def center_position(x, y, w, h):
     center_x = x + (w // 2)
     center_y = y + (h // 2)
@@ -28,17 +34,19 @@ def center_position(x, y, w, h):
 
 
 # real time detection using background subtractor
-def count_using_bg_sub(show_detect):
+
+
+def count_using_bg_sub(show_detect, video):
     show_detect = show_detect.lower()
-    CAP = cv2.VideoCapture('./Resources/video1.mp4')
+    CAP = cv2.VideoCapture('./Resources/video{}.mp4'.format(video))
 
     # Initialize Background Subtructor
     subtract = cv2.bgsegm.createBackgroundSubtractorMOG()
-    kernel   = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
 
     # Configuration for detection
-    vehicle_count   = 0
-    detect_car  = []
+    vehicle_count = 0
+    detect_car = []
 
     while CAP.isOpened():
         duration = 1 / fps
@@ -46,14 +54,18 @@ def count_using_bg_sub(show_detect):
 
         # Read each frame of the video
         ret, frame = CAP.read()
-        gray  = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        blur  = cv2.GaussianBlur(gray, (3, 3), 5)
+        # print(frame)
+        if frame is None:
+            break
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        blur = cv2.GaussianBlur(gray, (3, 3), 5)
 
         # Subtract background, fill up object area and clear noise
-        img_sub  = subtract.apply(blur)
+        img_sub = subtract.apply(blur)
         dilation = cv2.dilate(img_sub, np.ones((5, 5)))
-        opening  = cv2.morphologyEx(dilation, cv2.MORPH_OPEN, kernel)
-        contours = cv2.findContours(opening, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)[0]
+        opening = cv2.morphologyEx(dilation, cv2.MORPH_OPEN, kernel)
+        contours = cv2.findContours(
+            opening, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)[0]
 
         # Count if the car pass this line
         cv2.line(frame, (25, linePos), (1200, linePos), BLUE, 2)
@@ -61,7 +73,8 @@ def count_using_bg_sub(show_detect):
         for contour in contours:
             x, y, w, h = cv2.boundingRect(contour)
             valid_contour = (w >= min_width) and (h >= min_height)
-            if not valid_contour: continue
+            if not valid_contour:
+                continue
 
             cv2.rectangle(frame, (x, y), (x + w, y + h), GREEN, 2)
             center_car = center_position(x, y, w, h)
@@ -75,9 +88,10 @@ def count_using_bg_sub(show_detect):
                     detect_car.remove((x, y))
                     vehicle_count += 1
 
-        cv2.putText(frame, f"Car Detected: {vehicle_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
+        cv2.putText(
+            frame, f"Car Detected: {vehicle_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
         cv2.imshow('Vehicles Detection', frame)
-        if show_detect.startswith('y')
+        if show_detect.startswith('y'):
             cv2.imshow('Detector', opening)
 
         # Press 'ESC' Key to Quit
@@ -91,12 +105,12 @@ def count_using_bg_sub(show_detect):
 
 
 # real time detection using model cars.xml (less accuracy)
-def count_using_model_xml():
-    CAP = cv2.VideoCapture('./Resources/video2.mp4')
+def count_using_model_xml(video):
+    CAP = cv2.VideoCapture('./Resources/video{}.mp4'.format(video))
 
     # Configuration for detection
     detect_car = []
-    vehicle_count  = 0
+    vehicle_count = 0
 
     while CAP.isOpened():
         duration = 1 / fps
@@ -104,15 +118,17 @@ def count_using_model_xml():
 
         # Read first frame
         ret, frame = CAP.read()
+        if frame is None:
+            break
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         blur = cv2.GaussianBlur(gray, (3, 3), 5)
 
         # Pass frame to our car classifier
         vehicle = CLF.detectMultiScale(
-            blur, 
-            scaleFactor = 1.2,    # how much the image size is reduced at each image scale
-            minNeighbors = 2,     # how many neighbors each candidate rectangle should have to retain it
-            minSize = (min_width, min_height)
+            blur,
+            scaleFactor=1.2,    # how much the image size is reduced at each image scale
+            minNeighbors=2,     # how many neighbors each candidate rectangle should have to retain it
+            minSize=(min_width, min_height)
         )
 
         # Count if the car pass this line
@@ -133,7 +149,8 @@ def count_using_model_xml():
                     detect_car.remove((x, y))
                     vehicle_count += 1
 
-        cv2.putText(frame, f"Car Detected: {vehicle_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
+        cv2.putText(
+            frame, f"Car Detected: {vehicle_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
         cv2.imshow('Vehicles Detection', frame)
 
         # Press 'ESC' Key to Quit
