@@ -13,7 +13,7 @@ CLF  = cv2.CascadeClassifier('./Resources/cars.xml')
 FONT = cv2.FONT_HERSHEY_COMPLEX
 
 # Configuration
-offset     = 6
+offset     = 5
 fps        = 60
 min_width  = 80
 min_height = 80
@@ -30,14 +30,14 @@ def center_position(x, y, w, h):
 # real time detection using background subtractor
 def count_using_bg_sub(show_detect):
     show_detect = show_detect.lower()
-    CAP = cv2.VideoCapture('./Resources/video2.mp4')
+    CAP = cv2.VideoCapture('./Resources/video1.mp4')
 
     # Initialize Background Subtructor
     subtract = cv2.bgsegm.createBackgroundSubtractorMOG()
     kernel   = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
 
     # Configuration for detection
-    car_count   = 0
+    vehicle_count   = 0
     detect_car  = []
 
     while CAP.isOpened():
@@ -73,11 +73,11 @@ def count_using_bg_sub(show_detect):
                 if y < linePos + offset and y > linePos - offset:
                     cv2.line(frame, (25, linePos), (1200, linePos), ORANGE, 3)
                     detect_car.remove((x, y))
-                    car_count += 1
+                    vehicle_count += 1
 
-        cv2.putText(frame, f"Car Detected: {car_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
-        cv2.imshow('Cars Detection', frame)
-        if show_detect.startswith('y'):
+        cv2.putText(frame, f"Car Detected: {vehicle_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
+        cv2.imshow('Vehicles Detection', frame)
+        if show_detect.startswith('y')
             cv2.imshow('Detector', opening)
 
         # Press 'ESC' Key to Quit
@@ -87,7 +87,7 @@ def count_using_bg_sub(show_detect):
     cv2.destroyAllWindows()
     CAP.release()
 
-    return car_count
+    return vehicle_count
 
 
 # real time detection using model cars.xml (less accuracy)
@@ -96,7 +96,7 @@ def count_using_model_xml():
 
     # Configuration for detection
     detect_car = []
-    car_count  = 0
+    vehicle_count  = 0
 
     while CAP.isOpened():
         duration = 1 / fps
@@ -108,7 +108,7 @@ def count_using_model_xml():
         blur = cv2.GaussianBlur(gray, (3, 3), 5)
 
         # Pass frame to our car classifier
-        cars = CLF.detectMultiScale(
+        vehicle = CLF.detectMultiScale(
             blur, 
             scaleFactor = 1.2,    # how much the image size is reduced at each image scale
             minNeighbors = 2,     # how many neighbors each candidate rectangle should have to retain it
@@ -119,7 +119,7 @@ def count_using_model_xml():
         cv2.line(frame, (25, linePos), (1200, linePos), BLUE, 2)
 
         # Extract bounding boxes for any car identified
-        for (x, y, w, h) in cars:
+        for (x, y, w, h) in vehicle:
             cv2.rectangle(frame, (x, y), (x + w, y + h), GREEN, 2)
 
             center = center_position(x, y, w, h)
@@ -131,10 +131,10 @@ def count_using_model_xml():
                 if (y < (linePos + offset)) and (y > (linePos - offset)):
                     cv2.line(frame, (25, linePos), (1200, linePos), ORANGE, 3)
                     detect_car.remove((x, y))
-                    car_count += 1
+                    vehicle_count += 1
 
-        cv2.putText(frame, f"Car Detected: {car_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
-        cv2.imshow('Cars Detection', frame)
+        cv2.putText(frame, f"Car Detected: {vehicle_count}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
+        cv2.imshow('Vehicles Detection', frame)
 
         # Press 'ESC' Key to Quit
         if cv2.waitKey(1) == 27:
@@ -143,4 +143,4 @@ def count_using_model_xml():
     cv2.destroyAllWindows()
     CAP.release()
 
-    return car_count
+    return vehicle_count
