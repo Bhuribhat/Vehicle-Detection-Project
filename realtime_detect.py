@@ -3,21 +3,21 @@ import time
 import numpy as np
 
 # Colors and Constants
-RED    = (0, 0, 255)
-GREEN  = (0, 255, 0)
-BLUE   = (176, 130, 39)
+RED = (0, 0, 255)
+GREEN = (0, 255, 0)
+BLUE = (176, 130, 39)
 ORANGE = (0, 127, 255)
 
 # Create Car Classifier
-CLF  = cv2.CascadeClassifier('./Resources/cars.xml')
+CLF = cv2.CascadeClassifier('./Resources/cars.xml')
 FONT = cv2.FONT_HERSHEY_COMPLEX
 
 # Configuration
-offset     = 6
-fps        = 60
-min_width  = 80
+offset = 6
+fps = 60
+min_width = 80
 min_height = 80
-linePos    = 550
+linePos = 550
 
 ground_truth1 = 62
 ground_truth2 = 36
@@ -36,7 +36,7 @@ def count_using_bg_sub(show_detect, video):
 
     # Initialize Background Subtructor
     subtract = cv2.bgsegm.createBackgroundSubtractorMOG()
-    kernel   = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
 
     # Configuration for detection
     detect_vehicle = []
@@ -57,7 +57,8 @@ def count_using_bg_sub(show_detect, video):
         img_sub = subtract.apply(blur)
         dilation = cv2.dilate(img_sub, np.ones((5, 5)))
         opening = cv2.morphologyEx(dilation, cv2.MORPH_OPEN, kernel)
-        contours = cv2.findContours(opening, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)[0]
+        contours = cv2.findContours(
+            opening, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)[0]
 
         # Count if the car pass this line
         cv2.line(frame, (25, linePos), (1200, linePos), BLUE, 2)
@@ -80,7 +81,8 @@ def count_using_bg_sub(show_detect, video):
                     detect_vehicle.remove((x, y))
                     vehicle_counts += 1
 
-        cv2.putText(frame, f"Car Detected: {vehicle_counts}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
+        cv2.putText(
+            frame, f"Car Detected: {vehicle_counts}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
         cv2.imshow('Vehicles Detection', frame)
         if show_detect.startswith('y'):
             cv2.imshow('Detector', opening)
@@ -141,7 +143,8 @@ def count_using_model_xml(video):
                     detect_vehicle.remove((x, y))
                     vehicle_counts += 1
 
-        cv2.putText(frame, f"Car Detected: {vehicle_counts}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
+        cv2.putText(
+            frame, f"Car Detected: {vehicle_counts}", (50, 70), FONT, 2, RED, 3, cv2.LINE_AA)
         cv2.imshow('Vehicles Detection', frame)
 
         # Press 'ESC' Key to Quit
